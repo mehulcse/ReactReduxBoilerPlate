@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import globalReducer from 'containers/App/reducer';
-import formListReducer from 'containers/FormList/reducer';
+import { reducer as formReducer } from 'redux-form';
+import createPatient from 'containers/AddPatient/reducer';
 
 export default combineReducers({
     global: globalReducer,
     routing: routerReducer,
-    formList: formListReducer,
+    form: formReducer,
+    patient: createPatient,
 });

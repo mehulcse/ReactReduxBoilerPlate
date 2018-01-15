@@ -4,6 +4,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import PropTypes from 'prop-types';
 
 import AppContainer from 'containers/App';
+import CreatePatient from 'containers/AddPatient';
 import TokenManager from 'utils/TokenManager';
 import { history } from './store';
 
@@ -26,6 +27,7 @@ export default () => (
     <ConnectedRouter history={history}>
         <Switch>
             <Route path="/" exact component={require('containers/Welcome').default} />
+            <Route path="/addPatient" exact component={CreatePatient} />
             <Route path="*" component={require('containers/NotFound').default} />
         </Switch>
     </ConnectedRouter>
