@@ -1,0 +1,55 @@
+{
+  "clientList": [{
+    "id": 1,
+    "username": "abc",
+    "email": "test@gmail.com",
+    "associated_hospital": "Johns Hopkins Hospital",
+    "password": "abc",
+    "landline_number": "02025625987",
+    "mobile_number": "9787858958",
+    "address_line_1": "pune",
+    "address_line_2": "maharashtra",
+    "city": "pune",
+    "zipcode": "411045"
+  },
+    {
+      "id": 2,
+      "username": "abc",
+      "email": "test@gmail.com",
+      "associated_hospital": "Johns Hopkins Hospital",
+      "password": "abc",
+      "landline_number": "02025625987",
+      "mobile_number": "9787858958",
+      "address_line_1": "pune",
+      "address_line_2": "maharashtra",
+      "city": "pune",
+      "zipcode": "411045"
+    },
+    {
+      "id": 3,
+      "username": "abc",
+      "email": "test@gmail.com",
+      "associated_hospital": "Johns Hopkins Hospital",
+      "password": "abc",
+      "landline_number": "02025625987",
+      "mobile_number": "9787858958",
+      "address_line_1": "pune",
+      "address_line_2": "maharashtra",
+      "city": "pune",
+      "zipcode": "411045"
+    },
+    {
+      "id": 4,
+      "username": "abc",
+      "email": "test@gmail.com",
+      "associated_hospital": "Johns Hopkins Hospital",
+      "password": "abc",
+      "landline_number": "02025625987",
+      "mobile_number": "9787858958",
+      "address_line_1": "pune",
+      "address_line_2": "maharashtra",
+      "city": "pune",
+      "zipcode": "411045"
+    }
+  ]
+}

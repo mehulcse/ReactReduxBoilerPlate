@@ -1,0 +1,294 @@
+body {background-color: #f1f1f1;font-family: 'Titillium Web', sans-serif; font-size: 16px;}
+
+/** Padding CSS **/
+.paddingRTLT {padding: 0 25px;}
+.paddingLT40 {padding-left: 40px;}
+.paddingRT40 {padding-right: 40px;}
+/** Padding CSS **/
+
+/** Margin CSS **/
+.margin15 {margin: 15px;} 
+.marginLT10 {margin-left: 10px;} 
+.marginRT10 {margin-right: 10px;} 
+.marginRT5 {margin-right: 5px;} 
+/** Margin CSS **/
+.font14 {font-size: 14px;}
+
+.header {padding: 20px 15px; border-bottom: 2px solid #562d89; background-color: #ffffff;}
+.header .nav, .header .navbar {padding: 0; font-size: 14px;}
+
+.sidebar {width: 140px; background-color: #3d4a53;height: 100%; left:0; position: absolute;}
+.sidebar a .fa {font-size: 30px; display: block; text-align: center;}
+.sidebar a {
+	color: #a5a5a6;
+    display: block;
+    text-align: center;
+    padding: 25px 0;
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	background-color: #2f3a40;
+	color: #0dc0cd;
+}
+.sidebar a.active {
+	background-color: #2f3a40;
+	color: #0dc0cd;
+}
+
+.content { margin-left: 140px; }
+.breadcrumb {background-color: transparent; margin: 15px;font-size: 16px;}
+.breadcrumb a {color: #3f3f3f;}
+.navBox {height: 42px; background-color: #562d89;}
+.breadcrumb-item + .breadcrumb-item::before {content: ">"}
+.formContainer, .registerBox, .TabelCall {background-color: #ffffff; margin: 0 30px 30px 30px; box-shadow: 0px 0px 5px 3px #e7e7e7; padding: 30px;}
+.TabelCall {padding:0;}
+.TabelCall .table thead th {font-weight: normal; padding: 15px 15px 15px 35px;}
+.TabelCall .table th, .TabelCall .table td {padding: 12px 15px 12px 35px; line-height: 30px;}
+.registerBox .row, .formContainer .row {margin-bottom: 35px;}
+/* form starting stylings ------------------------------- */
+.formBox .group 			  {
+  position:relative;
+}
+.formBox input 				{
+  font-size:14px;
+  padding:10px 10px 10px 0px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #d2d2d2;
+}
+.formBox input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+
+.formBox label 				 {
+    color: #959393;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.formBox input:focus ~ label, .formBox input:valid ~ label		{
+  top:-15px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+.formBox input:required {
+    box-shadow:none;
+}
+.formBox input:invalid {
+    box-shadow:0 0 0px red;
+}
+
+/* BOTTOM BARS ================================= */
+.formBox .bar 	{ position:relative; display:block; width:100%; }
+.formBox .bar:before, .bar:after 	{
+  content:'';
+  height:1px;
+  width:0;
+  bottom:0;
+  position:absolute;
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.formBox .bar:before {
+  left:50%;
+}
+.formBox .bar:after {
+  right:50%;
+}
+
+/* active state */
+.formBox input:focus ~ .bar:before, .formBox input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.formBox .highlight {
+  position:absolute;
+  height:60%;
+  width:100%;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.formBox input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+  width: 100%;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0dc0cd;
+    border-radius: 19px;
+    border: 0px;
+    font-size: 16px;
+    padding: 5px 25px;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #adc7c9;
+    border-radius: 19px;
+    border: 0px;
+    font-size: 16px;
+    padding: 5px 25px;
+}
+
+.navBox .navbar {padding:0px;}
+.navBox .navbar-light .navbar-nav .nav-link {
+	color: #c3c3c3;
+    font-size: 16px;
+    margin: 0px 30px;
+    padding: 7px 0;
+
+}
+.navBox .navbar-light .navbar-nav .nav-link:hover {
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+.navBox .active {
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+.logout {padding: 5px;}
+
+.mdl-selectfield {
+	width: 100%;
+	padding: 10px 0
+}
+.mdl-selectfield--floating-label.is-focused .mdl-selectfield__label, .mdl-selectfield--floating-label.is-dirty .mdl-selectfield__label {
+	top: -15px;
+	font-size: 14px;
+}
+.mdl-selectfield__placeholder>i {
+    display: none;
+}
+.mdl-icon-toggle__label.material-icons {
+	position: absolute;
+    right: 0;
+    top: 8px;
+		color: #a2a2a2;
+}
+.mdl-selectfield__label:after {
+    bottom: 3px;
+    height: 1px;
+}
+.mdl-selectfield.mdl-selectfield--floating-label .mdl-menu__container {
+    top: 43px !important;
+}
+.mdl-selectfield__placeholder {
+    padding: 18px 0;
+    top: 8px;
+}
+
+
+/** Start Register Page CSS **/
+.register-bg { background: url(../images/Register-bg.jpg);}
+.registerBox {width: 750px; margin: 30px auto;}
+.formheader {text-align: center;}
+.formheader img {text-align: center; padding: 0px 0 20px 0;}
+.formheader h2 {font-size: 24px; color: #8d8c8c; padding-bottom: 20px;}
+/** End Register Page CSS **/
+
+
+
+/*Radio Buttons*/
+.formBox-radio .md-radio {
+  margin: 4px 0;
+  color: #959393;
+  font-size: 14px;
+}
+.formBox-radio .md-radio.md-radio-inline {
+  display: inline-block;
+}
+.formBox-radio .md-radio input[type="radio"] {
+  display: none;
+}
+.formBox-radio .md-radio input[type="radio"]:checked + label:before {
+  border-color: #0dc0cd;
+  animation: ripple 0.2s linear forwards;
+}
+.formBox-radio .md-radio input[type="radio"]:checked + label:after {
+  transform: scale(1);
+}
+.formBox-radio .md-radio label {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  padding: 0 27px;
+  margin-bottom: 0;
+  cursor: pointer;
+  vertical-align: bottom;
+  color: #959393;
+  font-size: 14px;
+}
+.formBox-radio  .md-radio label:before, .formBox-radio  .md-radio label:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  transition: all .3s ease;
+  transition-property: transform, border-color;
+}
+.formBox-radio  .md-radio label:before {
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #919090;
+}
+.formBox-radio  .md-radio label:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  background: #0dc0cd;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+/*Radio Buttons*/
+
+.addClient {padding: 15px; float: right; margin: 5px 15px 0 15px;}
+.approved {
+	border: 1px solid #a4b6c3;
+    border-radius: 50%;
+    padding: 7px;
+    color: #0ed74c;
+	font-size: 15px;
+}
+.unapprove, .clientedit, .clientdelete {
+	border: 1px solid #a4b6c3;
+    border-radius: 50%;
+    padding: 7px;
+    color: #6f92aa;
+	font-size: 15px;
+}
+
+.clientedit, .clientdelete {
+    padding: 7px 8px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+.userRole {font-size: 14px; color: #959393;}
+
+
